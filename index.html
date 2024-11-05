@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mortgage Calculator</title>
+</head>
+<body>
+    <!-- Header Ad Space -->
+    <div class="ad-space">Ad Space</div>
+
+    <h1>Mortgage Calculator</h1>
+
+    <div class="content-wrapper">
+        <!-- Left Ad Space -->
+        <div class="ad-side">Ad Space</div>
+
+        <!-- Calculator Section -->
+        <div class="calculator">
+            <div class="header">Mortgage Calculator</div>
+            <div class="form-group">
+                <label for="mortgageAmount">Loan Amount ($)</label>
+                <input type="number" id="mortgageAmount" placeholder="Enter loan amount">
+
+                <label for="mortgageInterest">Interest Rate (%)</label>
+                <input type="number" id="mortgageInterest" placeholder="Enter interest rate">
+
+                <label for="mortgageYears">Loan Term (Years)</label>
+                <input type="number" id="mortgageYears" placeholder="Enter loan term in years">
+
+                <button class="calculate-btn" onclick="calculateMortgage()">Calculate</button>
+            </div>
+            <div class="result" id="mortgageResult"></div>
+            <div class="chart-container">
+                <canvas id="mortgageChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Right Ad Space -->
+        <div class="ad-side">Ad Space</div>
+    </div>
+
+    <!-- Footer Ad Space -->
+    <footer>Ad Space</footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
+
